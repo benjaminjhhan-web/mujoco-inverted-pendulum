@@ -14,7 +14,7 @@ Throughout the development process, I encountered and solved several modeling an
 
 ## Results & Testing
 Once the baseline was stable, I stress-tested the controller against real-world scenarios:
-1. I simulated a massive "kick" to the pendulum at step 500. The PD controller successfully neutralized the disturbance and returned the system to a 0.0 radian state.
+1. I simulated a massive "kick" to the pendulum at step 500. The PD controller successfully neutralized the disturbance and returned the system to a 0.0 radian state. (Ignore the line after step 1350, this is when the pendulum reached the physical limit of my simulation track).
 
 ![Graph With Kick](Graph-with-kick.png)
 
