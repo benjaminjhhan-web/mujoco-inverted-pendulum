@@ -15,8 +15,11 @@ Throughout the development process, I encountered and solved several modeling an
 ## Results & Testing
 Once the baseline was stable, I stress-tested the controller against real-world scenarios:
 1. I simulated a massive "kick" to the pendulum at step 500. The PD controller successfully neutralized the disturbance and returned the system to a 0.0 radian state.
+
 ![Graph With Kick](Graph-with-kick.png)
+
 3. To simulate imperfect real-world hardware, I used Gaussian noise (`np.random.normal`) into the angle sensor data. The controller maintained stability despite the jittery inputs.
+
 ![Graph With Noise](Stability-with-noisy-sensor-data.png)
 
 ## How to Run
